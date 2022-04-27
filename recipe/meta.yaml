@@ -1,5 +1,5 @@
 {% set name = "pika" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: pika-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pika/pika-{{ version }}.tar.gz
-  sha256: f023d6ac581086b124190cb3dc81dd581a149d216fa4540ac34f9be1e3970b89
+  sha256: e5fbf3a0a3599f4e114f6e4a7af096f9413a8f24f975c2657ba2fac3c931434f
 
 build:
   noarch: python
