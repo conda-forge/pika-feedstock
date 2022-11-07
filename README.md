@@ -148,6 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@chrisjsewell](https://github.com/chrisjsewell/)
-* [@frol](https://github.com/frol/)
 * [@ltalirz](https://github.com/ltalirz/)
 
