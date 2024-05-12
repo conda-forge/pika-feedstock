@@ -1,11 +1,11 @@
-About pika
-==========
+About pika-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pika-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pika.readthedocs.io
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pika-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pure Python RabbitMQ/AMQP 0-9-1 client library
 
