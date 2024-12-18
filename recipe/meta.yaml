@@ -7,24 +7,26 @@ package:
 
 source:
   fn: pika-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/pika/pika-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pika/pika-{{ version }}.tar.gz
   sha256: beb19ff6dd1547f99a29acc2c6987ebb2ba7c44bf44a3f8e305877c5ef7d2fdc
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pika
 
