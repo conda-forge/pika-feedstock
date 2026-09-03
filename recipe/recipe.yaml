@@ -1,0 +1,45 @@
+schema_version: 1
+
+context:
+  name: pika
+  version: "1.4.4"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/p/pika/pika-${{ version }}.tar.gz
+  sha256: 8cfc8b33a5cb16e733bd60cffca9732c0d1d761ecd80a89f34ed7df2cd38d6d6
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vvv
+
+requirements:
+  host:
+    - pip
+    - python >=3.6
+    - setuptools
+  run:
+    - python >=3.6
+
+tests:
+  - python:
+      imports:
+        - pika
+      pip_check: false
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Pure Python RabbitMQ/AMQP 0-9-1 client library
+  homepage: https://pika.readthedocs.io
+  repository: https://github.com/pika/pika
+  documentation: https://pika.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - ltalirz
+    - chrisjsewell
