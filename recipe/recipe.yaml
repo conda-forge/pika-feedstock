@@ -1,11 +1,10 @@
 schema_version: 1
 
 context:
-  name: pika
   version: "1.4.4"
 
 package:
-  name: ${{ name|lower }}
+  name: pika
   version: ${{ version }}
 
 source:
@@ -15,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . --no-deps -vvv
+  script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation
 
 requirements:
   host:
