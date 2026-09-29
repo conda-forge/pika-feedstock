@@ -193,5 +193,6 @@ Feedstock Maintainers
 =====================
 
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@jsmolic](https://github.com/jsmolic/)
 * [@ltalirz](https://github.com/ltalirz/)
 
