@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.4.4"
+  version: "1.5.0"
 
 package:
   name: pika
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pika/pika-${{ version }}.tar.gz
-  sha256: 8cfc8b33a5cb16e733bd60cffca9732c0d1d761ecd80a89f34ed7df2cd38d6d6
+  sha256: 339afb9b2f55b31e03ebd1d96308e72e1d1d8e0e2c4ccea57d0f3d72fd10f333
 
 build:
   number: 0
